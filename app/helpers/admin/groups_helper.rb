@@ -1,5 +1,7 @@
 module Admin::GroupsHelper
 
+  include ReaderHelper
+
   def message_preview(subject, body, reader)
     preview = <<EOM
 From: #{current_user.name} &lt;#{current_user.email}&gt;
