@@ -1,3 +1,8 @@
 - fields_for @message do |f|
+
+  - unless @message.group
+    = f.label :group_id, t('group')
+    = f.collection_select :group_id, Group.all, :id, :name, :include_blank => t('no_group')
+
   - if @message.new_record? && @message.group
     = f.hidden_field :group_id

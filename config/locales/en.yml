@@ -37,11 +37,13 @@ en:
   modify: Modify
   name: Name
   new_group: new group
+  no_group: No group specifically
   no_invitation_message: This group has no invitation message. You will need to create one before you can invite people into it.
   none: none
   optional_login: "[login]"
   optional_phone: "[phone]"
   or: or
+  other_message: ad-hoc message
   other_messages: Ad-hoc messages
   page_not_public: The page you have requested is not public. Please log in. If your account has the necessary permission you will be taken straight there.
   page_private: "Sorry: you don't have permission to view that page."

@@ -1,4 +1,8 @@
 - if @message.function
   = t(@message.function.to_s + "_message")
+- else
+  = t('other_message')
+  
 - if @message.group
   = t('for_group', :name => @message.group.name)
+  
