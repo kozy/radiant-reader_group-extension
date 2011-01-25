@@ -7,7 +7,7 @@
       - form.edit_group do
         #group
           %p.title
-            = f.label :name
+            = f.label :name, t('name')
             = f.text_field 'name', :maxlength => 100, :class => "textbox"
           %p.description
             = f.label :description, t("description")

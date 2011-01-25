@@ -20,7 +20,7 @@ EOM
   def choose_page(object, field, select_options={})
     root = Page.respond_to?(:homepage) ? Page.homepage : Page.find_by_parent_id(nil)
     options = page_option_branch(root)
-    options.unshift ['<none>', nil]
+    options.unshift ['<' + I18n.t('none') + '>', nil]
     select object, field, options, select_options
   end
     
